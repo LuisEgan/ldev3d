@@ -2,7 +2,7 @@ import { FC, useRef, MouseEvent } from "react";
 
 import { innerDimensions } from "../../utils/elems";
 
-interface ITilt {
+export interface ITilt {
   className?: string;
   deg?: number;
   children?: React.ReactNode;

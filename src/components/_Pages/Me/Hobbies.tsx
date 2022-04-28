@@ -42,7 +42,7 @@ const Hobbies = () => {
 
       <div className="flex flex-wrap justify-around">
         {HOBBIES.map((h) => (
-          <SmallCard {...h} className="my-10 w-full md:w-[25vw]" />
+          <SmallCard {...h} className="my-10 w-full md:w-[25vw]" shadowColor="rgb(75 85 99)" />
         ))}
       </div>
     </div>

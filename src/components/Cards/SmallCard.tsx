@@ -1,9 +1,11 @@
 import Image from "next/image";
 
-import Tilt from "../Wrappers/Tilt";
+import Tilt, { ITilt } from "../Wrappers/Tilt";
 import { ICard } from "./cards.types";
 
-const SmallCard = (props: ICard) => {
+interface ISmallCard extends ICard, ITilt {}
+
+const SmallCard = (props: ISmallCard) => {
   const {
     imgSrc,
     title,
@@ -11,6 +13,7 @@ const SmallCard = (props: ICard) => {
     className = "",
     soon,
     onClick: onClickProp,
+    ...tiltProps
   } = props;
 
   const onClick = () => {
@@ -20,7 +23,7 @@ const SmallCard = (props: ICard) => {
   };
 
   return (
-    <Tilt className={`rounded-xl ${className}`}>
+    <Tilt className={`rounded-xl ${className}`} {...tiltProps}>
       <div
         onClick={onClick}
         className={`relative bg-gray-500 flex rounded-xl shadow-lg flex-col items-center p-5 h-full ${
