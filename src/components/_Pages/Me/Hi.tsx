@@ -29,17 +29,17 @@ const Hi = () => {
           </div>
 
           <div className="flex items-end">
-            <div className="font-bold text-[3rem] md:ml-4">D</div>
+            <div className="font-bold text-main-500 md:ml-4">D</div>
             <Typewrite delay={500} typingSpeed={5} textLine="aniel" />
           </div>
 
           <div className="flex items-end">
-            <span className="font-bold text-[3rem] md:ml-4">E</span>
+            <span className="font-bold text-main-500 md:ml-4">E</span>
             <Typewrite delay={800} typingSpeed={5} textLine="gan" />
           </div>
 
           <div className="flex items-end">
-            <span className="font-bold text-[3rem] md:ml-4">V</span>
+            <span className="font-bold text-main-500 md:ml-4">V</span>
             <Typewrite
               delay={1000}
               typingSpeed={5}
@@ -54,7 +54,7 @@ const Hi = () => {
         <div className="my-5 fade-in">
           <i>Fullstack / Unity developer</i>
 
-          <Button className="w-full my-5 py-0 px-0 md:w-2/5">
+          <Button className="w-full my-5 py-0 px-0 md:w-2/5" variant="ghost">
             <ScrollLink
               scrollToId={SECTIONS_IDS.Contact}
               title={"Contact me!"}
