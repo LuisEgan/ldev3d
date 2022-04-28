@@ -13,7 +13,7 @@ const Hobbies = () => {
 
       <p className="font-light">
         Programming is fun, but we must never forget to straighten our back,
-        lift our gaze and look around and enjoy everything life's got to offer.
+        lift our gaze, look around and enjoy everything life's got to offer.
         <br />
         <br />
         <i>
