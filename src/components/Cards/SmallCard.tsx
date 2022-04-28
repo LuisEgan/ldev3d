@@ -23,10 +23,10 @@ const SmallCard = (props: ISmallCard) => {
   };
 
   return (
-    <Tilt className={`rounded-xl ${className}`} {...tiltProps}>
+    <Tilt className={`rounded-md ${className}`} {...tiltProps}>
       <div
         onClick={onClick}
-        className={`relative bg-gray-500 flex rounded-xl shadow-lg flex-col items-center p-5 h-full ${
+        className={`relative bg-gray-700 flex shadow-lg flex-col items-center p-5 h-full ${
           onClickProp ? "cursor-pointer" : ""
         }`}
       >

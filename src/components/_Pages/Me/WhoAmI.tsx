@@ -63,7 +63,7 @@ const WhoAmI = () => {
         <div className="p-5 overflow-hidden h-[70vh] md:pl-3 md:flex-1">
           <Tilt
             className="relative h-full fade-in-right"
-            shadowColor="rgb(55 65 81)"
+            shadowColor="transparent"
           >
             <Image
               src="/jfif/me.jfif"
@@ -86,13 +86,14 @@ const WhoAmI = () => {
           {/* <Balls reverse /> */}
         </div>
 
-        <div className="flex flex-wrap justify-center">
+        <div className="grid grid-cols-1 gap-2 md:grid-cols-4">
           {Object.keys(TOOLS).map((category) => (
             <IconsCard
               key={category}
               icons={TOOLS[category].stack}
               title={category}
               mainIcon={TOOLS[category].icon}
+              className="h-[45vh] w-full"
             />
           ))}
 

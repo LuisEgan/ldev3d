@@ -21,7 +21,7 @@ const IconsCard = (props: IIconsCard) => {
 
   return (
     <div
-      className={`flex flex-col items-center p-5 bg-gray-800 w-60 border-[.1rem] ${
+      className={`flex flex-col items-center p-5 bg-gray-800 min-w-60 border-[.1rem] ${
         isMouseIn ? "border-main-500" : "border-gray-700"
       } ${className}`}
       onMouseEnter={() => setIsMouseIn(true)}
@@ -35,7 +35,7 @@ const IconsCard = (props: IIconsCard) => {
       />
 
       <span
-        className={`text-center text-xl my-10 ${
+        className={`text-center text-xl my-5 ${
           isMouseIn ? "text-main-500" : "text-white"
         }`}
       >

@@ -106,7 +106,7 @@ export const TOOLS: ITools = {
     ],
   },
 
-  "Projects": {
+  Projects: {
     icon: "book-open",
     stack: [
       {
@@ -220,21 +220,32 @@ export const JOBS: IJob[] = [
 export const HOBBIES: ICard[] = [
   {
     title: "Football",
-    description:
-      "I am a Real Madrid fan since I can remember. One of my most important accomplished life goals is to have visited the Santiago Bernabeu stadium. With a couple of cold ones we could talk football all day long.",
+    description: (
+      <>
+        I am a <b>Real Madrid</b> fan since I can remember. One of my most
+        important accomplished life goals is to have visited the Santiago
+        Bernabeu stadium. With a couple of cold ones we could talk football all
+        day long.
+      </>
+    ),
     imgSrc: "/webp/realmadrid.webp",
   },
   {
     title: "Movies",
-    description:
-      "Everything Tarantino and Di Caprio. Not much of a cinephile but I could spend hours talking how I don't really like super-hero movies, but a couple of my favorites are Watchmen and V for Vendetta.",
+    description: (
+      <>
+        Everything Tarantino and Di Caprio. Not much of a cinephile but I could
+        spend hours talking how I don't really like super-hero movies, but among
+        my favorites are <b>Watchmen</b> and <b>V for Vendetta.</b>
+      </>
+    ),
     imgSrc: "/webp/movie.webp",
   },
   {
     title: "Music",
     description: (
       <>
-        <b>TOOL</b>, Slipknot and Bad Bunny are my favorite artists. <br /> I
+        <b>TOOL,</b> Slipknot and Bad Bunny are my favorite artists. <br /> I
         can make a good-enough vibrato on the violin and play La la land's City
         of stars on the piano, but I'm playing the drums or the guitar if we
         jam.
@@ -252,15 +263,20 @@ export const HOBBIES: ICard[] = [
         </a>{" "}
         but, if I'm not playing football, I love getting my sweat on without
         much equipment. What kind of excercises do you like? My favorite is the
-        handstand 🤸🏻‍♂️
+        <b>handstand</b> 🤸🏻‍♂️
       </>
     ),
     imgSrc: "/webp/handstand (1).webp",
   },
   {
     title: "Games",
-    description:
-      "I wouldn't call myself a gamer, but I do need my dose of DotA from time to time and I'll buy you a beer if you can beat me in Super Smash Ultimate.",
+    description: (
+      <>
+        I wouldn't call myself a gamer, but I do need my dose of <b>DotA</b>{" "}
+        from time to time and I'll buy you a beer if you can beat me in{" "}
+        <b>Super Smash Ultimate</b>.
+      </>
+    ),
     imgSrc: "/webp/dota.webp",
   },
 ];

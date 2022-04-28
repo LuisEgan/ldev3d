@@ -1,25 +1,8 @@
-import { ReactNode } from "react";
 import SmallCard from "../../Cards/SmallCard";
 import Typewrite from "../../Typewrite";
 import { HOBBIES } from "./constants";
 
 const Hobbies = () => {
-  const genHobbiesGrid = () => {
-    const grid: ReactNode[] = [];
-
-    HOBBIES.forEach((h, i) => {
-      if (i === 3) {
-        grid.push(<div></div>);
-      }
-
-      grid.push(<SmallCard {...h} />);
-    });
-
-    grid.push(<div></div>);
-
-    return grid;
-  };
-
   return (
     <div className="flex flex-col p-5 pt-10 bg-gray-800 text-white min-h-[90vh] md:pl-20 md:pt-20">
       <Typewrite
@@ -42,7 +25,12 @@ const Hobbies = () => {
 
       <div className="flex flex-wrap justify-around">
         {HOBBIES.map((h) => (
-          <SmallCard {...h} className="my-10 w-full md:w-[25vw]" shadowColor="rgb(75 85 99)" />
+          <SmallCard
+            key={h.title}
+            {...h}
+            className="my-10 w-full md:w-[25vw]"
+            shadowColor="transparent"
+          />
         ))}
       </div>
     </div>

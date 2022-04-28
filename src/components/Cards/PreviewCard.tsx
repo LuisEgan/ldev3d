@@ -33,7 +33,7 @@ const PreviewCard = (props: IPreviewCard) => {
       </Modal>
 
       <div
-        className={`relative flex justify-center items-center h-full w-full bg-cover cursor-pointer hover:bg-[120% 120%] ${className}`}
+        className={`relative flex justify-center items-center aspect-square w-full bg-cover cursor-pointer hover:bg-[120% 120%] ${className}`}
         onMouseEnter={() => setIsMouseIn(true)}
         onMouseLeave={() => setIsMouseIn(false)}
         onClick={() => setIsModalOpen(true)}

@@ -54,10 +54,11 @@ const Hi = () => {
         <div className="my-5 fade-in">
           <i>Fullstack / Unity developer</i>
 
-          <Button className="w-full my-5 md:w-2/5">
+          <Button className="w-full my-5 py-0 px-0 md:w-2/5">
             <ScrollLink
               scrollToId={SECTIONS_IDS.Contact}
               title={"Contact me!"}
+              className="w-full h-full px-10 py-5 text-center"
             />
           </Button>
         </div>

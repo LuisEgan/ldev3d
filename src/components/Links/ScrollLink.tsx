@@ -15,6 +15,21 @@ const ScrollLink = (props: IScrollLink) => {
 
     window.scrollTo({ top: y, behavior: "smooth" });
 
+    setTimeout(() => {
+      // * If is not on the viewport, scroll again
+      const intObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) {
+            scrollTo();
+          } else {
+            intObserver.unobserve(element);
+          }
+        });
+      });
+
+      intObserver.observe(element);
+    }, 500);
+
     if (onClick) onClick();
   };
 
