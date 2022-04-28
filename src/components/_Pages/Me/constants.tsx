@@ -262,7 +262,7 @@ export const HOBBIES: ICard[] = [
           Chris Heria
         </a>{" "}
         but, if I'm not playing football, I love getting my sweat on without
-        much equipment. What kind of excercises do you like? My favorite is the
+        much equipment. What kind of excercises do you like? My favorite is the{" "}
         <b>handstand</b> 🤸🏻‍♂️
       </>
     ),

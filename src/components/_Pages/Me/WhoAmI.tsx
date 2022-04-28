@@ -93,7 +93,7 @@ const WhoAmI = () => {
               icons={TOOLS[category].stack}
               title={category}
               mainIcon={TOOLS[category].icon}
-              className="h-[45vh] w-full"
+              className="h-[43vh] min-h-[300px] max-h-[350px] w-full"
             />
           ))}
 
