@@ -1,0 +1,129 @@
+.transition-all {
+  transition: 1s;
+}
+
+.ripple {
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0);
+  animation: ripple 600ms linear;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+@keyframes ripple {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+.fade-in-section {
+  animation: fade-in 2s;
+}
+.fade-in {
+  animation: fade-in 1.2s;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in-right {
+  animation: fade-in-right 0.6s;
+}
+@keyframes fade-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+.fade-in-left {
+  animation: fade-in-left 0.6s;
+}
+@keyframes fade-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+.fade-in-bottom {
+  animation: fade-in-bottom 0.6s;
+}
+@keyframes fade-in-bottom {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.scale-in {
+  animation: scale-in 1.2s cubic-bezier(0.48, 0.7, 0, 1);
+}
+@keyframes scale-in {
+  0% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.scale-out {
+  animation: scale-out 0.6s cubic-bezier(0.48, 0.7, 0, 1);
+}
+@keyframes scale-out {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(0);
+  }
+}
+
+.blinking {
+  animation: blinking 2s infinite;
+}
+@keyframes blinking {
+  0% {
+    transform: scaleY(1);
+  }
+  15% {
+    transform: scaleY(0);
+  }
+  30% {
+    transform: scaleY(1);
+  }
+  45% {
+    transform: scaleY(0);
+  }
+  60% {
+    transform: scaleY(1);
+  }
+}
