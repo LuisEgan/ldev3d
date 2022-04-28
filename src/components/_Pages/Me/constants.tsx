@@ -106,7 +106,7 @@ export const TOOLS: ITools = {
     ],
   },
 
-  "Project Management": {
+  "Projects": {
     icon: "book-open",
     stack: [
       {
